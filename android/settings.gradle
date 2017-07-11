@@ -1,0 +1,5 @@
+rootProject.name = 'rc20170705'
+include ':@remobile/react-native-file-transfer'
+project(':@remobile/react-native-file-transfer').projectDir = new File(rootProject.projectDir, '../node_modules/@remobile/react-native-file-transfer/android')
+
+include ':app'
