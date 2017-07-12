@@ -6,6 +6,9 @@ import {View, Text, ListView, StyleSheet, TouchableHighlight, Alert} from 'react
 import ListViewTest from  '../view/ListViewTest'
 import ComNavigator from  '../view/ComNavigator'
 import ImageTest from  '../view/ImageTest'
+import ActivityIndicatorTest from  '../view/ActivityIndicatorTest'
+import FlatListTest from  '../view/FlatListTest'
+import TextInputTest from '../view/TextInputTest'
 
 
 export  default class ViewTest extends Component {
@@ -15,7 +18,10 @@ export  default class ViewTest extends Component {
         const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});//这是判断什么时候重新绘制，当r1与r2不相等的时候进行不一样
         var arr = [];
         arr[0] = {name: "ListView", target: ListViewTest};
-        arr[1]={name:"ImageView",target:ImageTest}
+        arr[1]={name:"ImageView",target:ImageTest};
+        arr[2]={name:"圆形的loading",target:ActivityIndicatorTest};
+        arr[3]={name:"简单的列表布局",target:FlatListTest};
+        arr[4]={name:"输入内容",target:TextInputTest};
         this.state = {
             dataSource: ds.cloneWithRows(arr)
         }

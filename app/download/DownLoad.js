@@ -3,7 +3,7 @@
  */
 
 import React, {Component} from "react";
-import {View, Text, Button, Alert, Platform} from 'react-native'
+import {View, Text, Button, Alert, Platform,ActivityIndicator} from 'react-native'
 
 import FileTransfer  from '@remobile/react-native-file-transfer'
 import ComNavigator from '../view/ComNavigator'
@@ -17,6 +17,8 @@ export default class DownLoad extends Component {
                 <Button title="文件的下载框架FileTransfer" onPress={() => this._onClickPress()}/>
                 <Button title="发红包的按钮post" onPress={() => this._onSendRedPackage()}/>
                 <Button title="get请求" onPress={() => this._onGet()}/>
+
+
             </View>
         );
     }
