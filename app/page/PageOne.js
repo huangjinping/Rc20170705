@@ -8,6 +8,7 @@ import PageFour from  './PageFour'
 import ListViewTest from '../view/ListViewTest'
 import  ViewTest  from  '../page/ViewTest'
 import DownLoad from  '../download/DownLoad'
+import FlexboxTest from '../flexbox/FlexboxTest'
 export default class PageOne extends Component {
     constructor(props) {
         super(props);
@@ -17,6 +18,7 @@ export default class PageOne extends Component {
         arr[1] = {name: '跳转到下一界面传值，并回调回来答案', target: PageFour}
         arr[2] = {name: '跳转到下一页面并传值', target: PageFour}
         arr[3] = {name: "网络上传下载等", target: DownLoad}
+        arr[4]={name:"布局",target:FlexboxTest}
         this.state = {
             name: "跳转到下一页面并传值",
             arr,
