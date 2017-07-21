@@ -11,4 +11,9 @@ export default class DimenUtil  {
         return Dimensions.get('window').width;
     }
 
+
+    static getScreenHeight(){
+        return Dimensions.get('window').height;
+    }
+
 }
